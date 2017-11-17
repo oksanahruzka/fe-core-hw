@@ -28,27 +28,24 @@ img {
   vertical-align: top;
   width: 250px;
   padding: 0;
+
 }
 .simple-list h2 {
   padding: 0 0 0 30px;
 }
 .simple-list1 {
-  padding: 0 0 0 80px;
+  padding: 0 0 0 40px;
 }
-.simple-list2 {
-  padding: 0 0 0 80px;
+.simple-list1 ul{
+  list-style: none;
 }
-.simple-list3 {
-  padding: 0 0 0 80px;
-}
-.simple-list1 h3::before,
-.simple-list2 h3::before,
-.simple-list3 h3::before {
+
+.simple-list1 li::before {
     font-size: 13pt;
     text-align: center;
+    line-height: 1.8;
     color: #fff;
-    font-weight: 300;
-    vertical-align: middle;
+    font-weight: 200;
     background: #5cc2f2;
     float: right;
     position: relative;
@@ -58,13 +55,13 @@ img {
     height: 30px;
     width: 30px;
 }
-.simple-list1 h3::before {
+.simple-list1 li:first-child::before {
     content: '1';
 }
-.simple-list2 h3::before {
+.simple-list1 li:nth-child(2)::before {
     content: '2';
 }
-.simple-list3 h3::before {
+.simple-list1 li:last-child::before {
     content: '3';
 }
 
@@ -137,16 +134,14 @@ img {
   content: url("../img/arrow.png");
   position: absolute;
   left: -5px;
-  /*top: 4px;*/
-
 }
+
 p {
   font-size: 13px;
   font-weight: 300;
   color: #000000;
   line-height: 20px;
 }
-
 
 h2 {
   margin: 20px 0 40px;
@@ -155,7 +150,8 @@ h2 {
   letter-spacing: -2px;
   line-height: 30px;
 }
-underlined {
+
+.underlined {
   border-bottom: 1px solid #333;
 }
 h4 {
@@ -167,7 +163,3 @@ h3 {
   font-size: 15px;
   letter-spacing: -1px;
 }
-
-/*hr {
-  margin: 40px 0;
-}*/
