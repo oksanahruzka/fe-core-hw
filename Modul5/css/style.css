@@ -1,8 +1,8 @@
 body {
   background: url(../img/sea.jpg);
   background-repeat: no-repeat;
-  background-position: center;
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-size: cover;
+  font-family: 'Pathway Gothic one', sans-serif;
   color:#1d3a68;
 }
 
@@ -33,6 +33,7 @@ body {
 }
 
 .header li h1{
+  font-family: 'Dorsa', sans-serif;
   background-color: #ffffff;
   width: 150px;
   height: 150px;
@@ -76,13 +77,13 @@ body {
 
 .menu:hover > .submenu { display: block; }
 h2 {
-  font-weight: 400;
-  letter-spacing: -2px;
+  font-weight: 100;
+  /*letter-spacing: -2px;*/
 }
 h1 {
-  font-weight: 400;
-  font-size: 40px;
-  letter-spacing: -5px;
+  font-weight: 500;
+  font-size: 55px;
+  /*letter-spacing: -5px;*/
 }
 .header li:hover h2 {
   color: #234172;
@@ -95,25 +96,25 @@ h1 {
   top: 200px;
   left: 0;
   width: 220px;
-  height: 40px;
+  height: 50px;
   background-color: #ffffff;
   text-align: center;
   line-height: 2.5;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .image .second {
   position: absolute;
-  top: 233px;
+  top: 240px;
   left: 0;
   background-color: #37b0e8;
-  height: 40px;
+  height: 50px;
   width: 250px;
   text-align: center;
   line-height: 1.8;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 28px;
   color: #ffffff;
 }
 .slide {
@@ -128,6 +129,7 @@ h1 {
   color: #ffffff;
   text-align: center;
   line-height: 2.5;
+  /*letter-spacing: -5;*/
 }
 .destinations {
   display: flex;
@@ -175,10 +177,14 @@ h1 {
   height: 30px;
   border-radius: 50%;
   bottom: 10px;
-  right: 200px;
+  right: 190px;
   background-color: #37b0e8;
-  font-size: 30px;
-  color: #ffffff;
+  /*font-size: 30px;*/
+  /*color: #ffffff;*/
   text-align: center;
-  line-height: -2;
+  /*line-height: -2;*/
+}
+/*.to-top img {*/
+  /*line-height: 0.5;*/
+  /*text-align: center;*/
 }
