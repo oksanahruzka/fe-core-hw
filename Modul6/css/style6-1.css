@@ -5,15 +5,6 @@ body {
   font-family: 'Roboto', sans-serif;
   color:#1d3a68;
 }
-.header {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 900px;
-  margin-top: 50px;
-  margin-right: auto;
-  margin-left: auto;
-}
 .wrapper {
   width: 1024px;
   margin: 0 auto;
@@ -21,15 +12,23 @@ body {
   background-color: #fff;
   box-sizing: border-box;
 }
-.header li {
-  width: 150px;
-  vertical-align: top;
-  text-align: center;
-  color: #fff;
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin: 50px auto 0;
+  padding-left: 0;
   list-style: none;
 }
 
-.header li h1{
+.menu_item > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.logo h1 {
   font-family: 'Dorsa', sans-serif;
   background-color: #fff;
   width: 150px;
@@ -37,38 +36,51 @@ body {
   text-align: center;
   line-height: 150px;
   border-radius: 50%;
-  color: #234172;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #091c3a;
 }
 
 .menu {
   position: relative;
-
 }
 
 .submenu {
+  background-color: #fff;
   display: none;
   position: absolute;
-  top: 50px;
-  left: -10px;
-  border-radius: 10%;
+  top: 125px;
+  left: 128px;
+  border-radius: 5%;
   margin-top: 5px;
   font-family: 'Pathway Gothic one', sans-serif;
 }
 
 .submenu li {
   width: 60px;
-  height: 25px;
-  background-color: #fff;
-  color: #3a537a;
+  height: 28px;
+  line-height: 1.5;
+  text-align: center;
   font-weight: 100;
+  list-style: none;
 }
-
+.submenu a {
+  text-decoration: none;
+  color: #3a537a;
+}
+.submenu ul {
+  padding-left: 0;
+}
 .submenu::after {
   content: '';
   display: block;
   position: absolute;
   font-weight: 600;
-  left: 65px;
+  left: 28px;
   top: -5px;
   width: 0;
   height: 0;
@@ -77,17 +89,16 @@ body {
   border-color: transparent transparent #fff transparent;
 }
 
-.menu:hover > .submenu { display: block; }
-h2 {
+.menu_item:hover > .submenu {
+  display: block;
+}
+
+.menu_item {
   font-weight: 100;
   font-family: 'Pathway Gothic one', sans-serif;
 }
 
-h1 {
-  font-weight: 500;
-  font-size: 55px;
-}
-.header li:hover h2 {
+.menu_item a:hover {
   color: #234172;
 }
 img {
@@ -221,6 +232,11 @@ p {
 
 .underlined {
   border-bottom: 1px solid #333;
+}
+h2 {
+  font-family: 'Pathway Gothic one', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
 }
 h4 {
   font-weight: 500;
