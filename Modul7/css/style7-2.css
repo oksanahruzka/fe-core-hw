@@ -1,0 +1,288 @@
+body {
+  background: url(../img/sea.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  color:#1d3a68;
+}
+
+main {
+  width: 1024px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+ul.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 900px;
+  margin: 50px auto 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu_item > a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+.logo h1 {
+  font-family: 'Dorsa', sans-serif;
+  background-color: #fff;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  line-height: 150px;
+  border-radius: 50%;
+  font-weight: 500;
+  font-size: 60px;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #091c3a;
+}
+
+.menu {
+  position: relative;
+}
+
+.submenu {
+  background-color: #fff;
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 128px;
+  border-radius: 5%;
+  margin-top: 5px;
+  font-family: 'Pathway Gothic one', sans-serif;
+}
+
+.submenu li {
+  width: 60px;
+  height: 28px;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 100;
+  list-style: none;
+}
+.submenu a {
+  text-decoration: none;
+  color: #3a537a;
+}
+.submenu ul {
+  padding-left: 0;
+}
+.submenu::after {
+  content: '';
+  display: block;
+  position: absolute;
+  font-weight: 600;
+  left: 28px;
+  top: -5px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 2.5px 5px 2.5px;
+  border-color: transparent transparent #fff transparent;
+}
+
+.menu_item:hover > .submenu {
+  display: block;
+}
+
+.menu_item {
+  font-weight: 100;
+  font-family: 'Pathway Gothic one', sans-serif;
+}
+
+.menu_item a:hover {
+  color: #1d3a68;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 207px;
+}
+h2 {
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Pathway Gothic one', sans-serif;
+
+}
+.wrapper {
+  display: flex;
+}
+.tours {
+  display: flex;
+  width: 650px;
+  height: 600px;
+  flex-wrap: wrap;
+  align-content: space-between;
+}
+
+.tours div {
+  width: 320px;
+  height: 180px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+.tours ul{
+margin: 0;
+padding-left: 30px;
+}
+.tours ul>li{
+  list-style: none;
+}
+.tours ul>li:first-child{
+  font-size: 13px;
+  color:#1d3a68;
+  font-weight: 500;
+}
+.tours ul>li:nth-child(even){
+  font-size: 10px;
+  padding-top: 10px;
+}
+.tours ul>li:nth-child(3),
+.tours ul>li:last-child{
+  font-size: 16px;
+  color: #49b4fc;
+  padding-top: 5px;
+}
+.details {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-left: 160px;
+  width: 70px;
+  font-size: 75%;
+  font-weight: 600;
+}
+.block {
+  width: 200px;
+}
+.block p {
+  font-size: 11px;
+}
+.form {
+  width: 200px;
+  height: 20px;
+  font-size: 11px;
+  background-color: #f2f2f2;
+  color: #676668;
+}
+.search {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  margin-top: 55px;
+  width: 70px;
+  font-size: 80%;
+  font-weight: 600;
+}
+.all {
+  color: #49b4fc;
+  margin-bottom: 5px;
+}
+.block2 {
+  margin-top: 45px;
+}
+.destination {
+  margin-top: 0;
+}
+.block3 {
+  margin-top: 30px;
+}
+footer {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+.list {
+  background-color: #263959;
+  color: #fff;
+  height: 200px;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  align-content: center;
+  line-height: 1.5;
+}
+
+.list li {
+  list-style: none;
+  width: 200px;
+  font-weight: 100;
+  text-align: left;
+}
+.info {
+  font-size: 12px;
+}
+.sprite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.sprite a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-image: url('../img/sprite.png');
+  background-size: 200px 40px;
+  padding: 0 5px;
+}
+
+.sprite .twitter {
+  background-position: 1px 0;
+}
+
+.sprite .facebook {
+  background-position: -50px 0;
+}
+
+.sprite .g-plus {
+  background-position: -101px 0;
+}
+
+.sprite .instagram {
+  background-position: -152px 0;
+}
+
+.social-media-list .g-plus {
+  background-position: -300px -50px;
+}
+
+.copy {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 100;
+}
+.to-top {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  bottom: 10px;
+  right: 190px;
+  background-color: #37b0e8;
+}
+
+.to-top a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-align: center;
+  line-height: 1.5;
+}
+.to-top img {
+  float: none;
+  margin: 0;
+}
