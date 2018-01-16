@@ -196,8 +196,12 @@ footer {
 .list li {
   list-style: none;
   width: 200px;
-  font-weight: 100;
   text-align: left;
+}
+.list li>a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
 }
 .info {
   font-size: 12px;
@@ -266,6 +270,9 @@ footer {
 }
 
 @media only screen and (max-width: 1023px) {
+  header {
+    min-width: 768px;
+  }
   .wrapper {
     min-width: 768px;
   }
@@ -325,6 +332,10 @@ footer {
   }
 }
 @media only screen and (max-width: 768px) {
+
+  header {
+    min-width: 480px;
+  }
   .wrapper {
     min-width: 480px;
   }

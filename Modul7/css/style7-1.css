@@ -221,8 +221,12 @@ footer {
 .list li {
   list-style: none;
   width: 200px;
-  font-weight: 100;
   text-align: left;
+}
+.list li>a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
 }
 .info {
   font-size: 12px;
