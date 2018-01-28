@@ -1,0 +1,122 @@
+.header {
+  padding: 20px 0;
+  &__nav-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 900px;
+    margin: 50px auto 0;
+    padding-left: 0;
+    list-style: none;
+    position: relative;
+  }
+  &__nav-menu-item {
+    font-weight: 100;
+    font-family: $menu-font;
+    &:hover > .submenu {
+      display: block;
+    }
+  }
+  &__nav-menu-link {
+    text-decoration: none;
+    color: $color1;
+    font-size: 25px;
+    &:hover {
+      color: $color2;
+    }
+  }
+  &__page-heading {
+    font-family: $heading-font;
+    background-color: $color1;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    line-height: 150px;
+    border-radius: 50%;
+    font-weight: 500;
+    font-size: 60px;
+  }
+}
+.submenu {
+  background-color: $color1;
+  display: none;
+  position: absolute;
+  top: 125px;
+  left: 128px;
+  border-radius: 5%;
+  margin-top: 5px;
+  font-family: $menu-font;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    font-weight: 600;
+    left: 28px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 2.5px 5px 2.5px;
+    border-color: transparent transparent #fff transparent;
+  }
+  &__menu {
+    padding-left: 0;
+  }
+  &__item {
+    width: 60px;
+    height: 28px;
+    line-height: 1.5;
+    text-align: center;
+    font-weight: 100;
+    list-style: none;
+  }
+  &__link {
+    text-decoration: none;
+    color: #3a537a;
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .header {
+    min-width: 768px;
+    &__nav-menu {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+        & .tablet-shorted {
+            text-indent: 40px;
+        }
+        & .logo{
+            width: 100%;
+            padding: 10px;
+            -webkit-box-ordinal-group: 0;
+                -ms-flex-order: -1;
+                    order: -1;
+        }
+        & .tablet-centered {
+            text-align: center;
+        }
+    }
+    &__nav-menu-item {
+        width: 100px;
+        padding: 10px 10px 10px 15px;
+    }
+    &__page-heading {
+        margin: 0 auto;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header {
+    min-width: 480px;
+  }
+}

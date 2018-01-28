@@ -1,0 +1,169 @@
+.main {
+  width: 50%;
+  min-width: 1024px;
+  margin: auto;
+  height: 820px;
+  background-color: $color1;
+  &__title {
+    padding: 70px 50px 40px;
+    margin: 0;
+    font-family: $menu-font;
+    font-weight: 500;
+    font-size: 30px;
+  }
+  &__gallery {
+    height: 500px;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  &__gallery-zoom {
+    display:none;
+    width: 33px;
+    height: 33px;
+  }
+  &__gallery-block {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 288px;
+    height: 150px;
+    &:hover {
+     -webkit-filter: brightness(40%);
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: flex;
+     -webkit-box-pack: center;
+         -ms-flex-pack: center;
+             justify-content: center;
+     -webkit-box-align: center;
+         -ms-flex-align: center;
+             align-items: center;
+    }
+    &:hover > .main__gallery-zoom {
+     display: block;
+    }
+    &:first-child {
+      background: url(../img/image1-min.jpg);
+    }
+    &:nth-child(2) {
+      background: url(../img/image2-min.jpg);
+    }
+    &:nth-child(3) {
+      background: url(../img/image3-min.jpg);
+    }
+    &:nth-child(4) {
+      background: url(../img/image4-min.jpg);
+    }
+    &:nth-child(5) {
+      background: url(../img/image5-min.jpg);
+    }
+    &:nth-child(6) {
+      background: url(../img/image6-min.jpg);
+    }
+    &:nth-child(7) {
+      background: url(../img/image7-min.jpg);
+    }
+    &:nth-child(8) {
+      background: url(../img/image8-min.jpg);
+    }
+    &:last-child {
+      background: url(../img/image9-min.jpg);
+    }
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .main {
+    min-width: 768px;
+    height: 900px;
+  }
+  .main__gallery-block:last-child {
+    display: none;
+  }
+  .main__gallery-block {
+    margin-bottom: 30px;
+  }
+  .footer {
+    min-width: 768px;
+  }
+  .footer__menu {
+    height: 120px;
+  }
+  .footer__menu-item {
+    width: 155px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .main {
+    min-width: 480px;
+    height: 1610px;
+    &__gallery-block {
+      width: 100%;
+      height: 217px;
+    }
+    &__gallery-block:first-child {
+      background: url(../img/image1_mob.jpg);
+    }
+    &__gallery-block:nth-child(2) {
+      background: url(../img/image2_mob.jpg);
+    }
+    &__gallery-block:nth-child(3) {
+      background: url(../img/image3_mob.jpg);
+    }
+    &__gallery-block:nth-child(4) {
+      background: url(../img/image4_mob.jpg);
+    }
+    &__gallery-block:nth-child(5) {
+      background: url(../img/image5_mob.jpg);
+    }
+    &__gallery-block:nth-child(6) {
+      background: url(../img/image6_mob.jpg);
+    }
+    &__gallery-block:nth-child(7),
+    &__gallery-block:nth-child(8),
+    &__gallery-block:last-child {
+      display: none;
+    }
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+      .main__gallery-block:first-child {
+        background: url(../img/image1_ret.jpg);
+      }
+      .main__gallery-block:nth-child(2) {
+        background: url(../img/image2_ret.jpg);
+      }
+      .main__gallery-block:nth-child(3) {
+        background: url(../img/image3_ret.jpg);
+      }
+      .main__gallery-block:nth-child(4) {
+        background: url(../img/image4_ret.jpg);
+      }
+      .main__gallery-block:nth-child(5) {
+        background: url(../img/image5_ret.jpg);
+      }
+      .main__gallery-block:nth-child(6) {
+        background: url(../img/image6_ret.jpg);
+      }
+      .main__gallery-block:nth-child(7) {
+        background: url(../img/image7_ret.jpg);
+      }
+      .main__gallery-block:nth-child(8) {
+        background: url(../img/image8_ret.jpg);
+      }
+      .main__gallery-block:last-child {
+        background: url(../img/image9_ret.jpg);
+      }
+    }
