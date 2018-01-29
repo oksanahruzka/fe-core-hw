@@ -27,8 +27,14 @@
       &__menu-item {
         list-style: none;
         width: 200px;
-        font-weight: 100;
         text-align: left;
+      }
+
+      &__menu-link {
+        text-decoration: none;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 100;
       }
       & .info {
         font-size: 12px;
